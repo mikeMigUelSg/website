@@ -1,0 +1,223 @@
+.technology {
+  background: var(--color-white);
+}
+
+.accent {
+  color: var(--color-primary);
+}
+
+/* Architecture Diagram */
+.architecture {
+  background: linear-gradient(135deg, var(--bg-dark) 0%, #0d1a17 100%);
+  border-radius: var(--border-radius-xl);
+  padding: 48px;
+  margin-bottom: 48px;
+  overflow-x: auto;
+}
+
+.archTitle {
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.archFlow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  min-width: fit-content;
+}
+
+.archStep {
+  display: flex;
+  align-items: center;
+}
+
+.archNode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 20px;
+  background: rgba(29, 185, 160, 0.08);
+  border: 1px solid rgba(29, 185, 160, 0.2);
+  border-radius: var(--border-radius-lg);
+  min-width: 130px;
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.archNode:hover {
+  background: rgba(29, 185, 160, 0.15);
+  border-color: rgba(29, 185, 160, 0.4);
+  box-shadow: var(--shadow-glow);
+}
+
+.archIcon {
+  font-size: 1.8rem;
+}
+
+.archLabel {
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-white);
+  white-space: pre-line;
+  line-height: 1.4;
+}
+
+.archSublabel {
+  font-size: 0.7rem;
+  color: var(--color-primary-light);
+  font-weight: 500;
+}
+
+.archConnector {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  transform-origin: left center;
+}
+
+/* Tech Features Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.iconWrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--border-radius-md);
+  background: var(--color-primary-lighter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-gray-700);
+}
+
+/* AI Section */
+.aiSection {
+  background: linear-gradient(135deg, var(--color-primary-lighter), #f0fcf9);
+  border-radius: var(--border-radius-xl);
+  padding: 48px;
+  border: 1px solid rgba(29, 185, 160, 0.15);
+}
+
+.aiTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  color: var(--color-black);
+  margin-bottom: 12px;
+}
+
+.aiTitle svg {
+  color: var(--color-primary);
+}
+
+.aiSubtitle {
+  font-size: 1rem;
+  color: var(--color-gray-700);
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.aiGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.aiCard {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(29, 185, 160, 0.1);
+  transition: all var(--transition-normal);
+}
+
+.aiCard:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.aiCardIcon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aiCardTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 6px;
+}
+
+.aiCardDesc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--color-gray-700);
+}
+
+@media (max-width: 900px) {
+  .grid,
+  .aiGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .archFlow {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .archConnector {
+    width: 2px;
+    height: 24px;
+    background: linear-gradient(180deg, var(--color-primary), var(--color-primary-light));
+    transform-origin: top center;
+  }
+
+  .architecture {
+    padding: 32px 20px;
+  }
+
+  .aiSection {
+    padding: 32px 20px;
+  }
+}
