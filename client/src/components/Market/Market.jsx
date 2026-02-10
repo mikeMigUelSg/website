@@ -1,9 +1,16 @@
 import { motion } from 'framer-motion';
-import { Globe, TrendingUp, Zap, AlertTriangle } from 'lucide-react';
+import { Globe, TrendingUp, Zap, AlertTriangle, Factory, CloudLightning, TrendingDown } from 'lucide-react';
 import AnimatedSection from '../ui/AnimatedSection';
 import Counter from '../ui/Counter';
 import FloatingShapes from '../ui/FloatingShapes';
+import UseCaseCarousel from './UseCaseCarousel';
 import styles from './Market.module.css';
+
+// Importar imagens
+import BlackoutImg from '../../img/Blackout.png';
+import KristinImg from '../../img/Kristin.jpeg';
+import SinesImg from '../../img/Sines.png';
+import CellsImg from '../../img/Cells.png';
 
 const marketStats = [
   {
@@ -29,16 +36,32 @@ const marketStats = [
 
 const useCases = [
   {
-    title: 'Blackout Ibérico',
+    title: 'Blackout 28 de Abril',
     description:
-      'O apagão que afetou Portugal e Espanha demonstrou a vulnerabilidade da rede e a necessidade crítica de sistemas de armazenamento descentralizados e resilientes.',
+      'O apagão de 28 de abril de 2025, desencadeado por uma falha nas interligações e perda súbita de produção solar na Andaluzia, deixou a Península Ibérica isolada, provando que a segurança da rede exige descentralização real.',
     icon: AlertTriangle,
+    image: BlackoutImg,
   },
   {
-    title: 'Indústria Automóvel',
+    title: 'Tempestade Kristin',
     description:
-      'Afundamentos de tensão em fábricas como a Stellantis causam perdas de produção de milhares de euros por cada interrupção, demonstrando o valor da resiliência energética.',
-    icon: Zap,
+      'A tempestade Kristin, que levou à declaração de Estado de Calamidade em 2026, deixou meio milhão de portugueses sem luz e destruiu infraestruturas críticas, expondo a incapacidade da rede atual em resistir a eventos climáticos extremos locais.',
+    icon: CloudLightning,
+    image: KristinImg,
+  },
+  {
+    title: 'Sines 4.0 & Grid Strain',
+    description:
+      'Com o Start Campus em Sines a atingir 1.2 GW de capacidade (mais de 10% do pico de consumo nacional), a pressão na rede dispara. Sem armazenamento local, esta procura massiva inflaciona os preços e aumenta o risco de falhas no abastecimento.',
+    icon: TrendingDown,
+    image: SinesImg,
+  },
+  {
+    title: 'Baterias "Second Life" 2030',
+    description:
+      'Até 2030, a primeira geração de VEs em Portugal chega ao fim de vida. Milhares de baterias com 70-80% de capacidade estarão disponíveis, criando uma oportunidade única para armazenamento estacionário de baixo custo e apoio à rede.',
+    icon: Factory,
+    image: CellsImg,
   },
 ];
 
@@ -116,25 +139,10 @@ export default function Market() {
           </div>
         </AnimatedSection>
 
-        {/* Use Cases */}
-        <div className={styles.useCases}>
-          <AnimatedSection>
-            <h3 className={styles.useCasesTitle}>Casos de Uso Reais</h3>
-          </AnimatedSection>
-          <div className={styles.useCasesGrid}>
-            {useCases.map((item, i) => (
-              <AnimatedSection key={item.title} delay={i * 0.15}>
-                <div className={styles.useCase}>
-                  <div className={styles.useCaseIcon}>
-                    <item.icon size={24} strokeWidth={1.5} />
-                  </div>
-                  <h4 className={styles.useCaseTitle}>{item.title}</h4>
-                  <p className={styles.useCaseDesc}>{item.description}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
+        {/* Use Cases Carousel */}
+        <AnimatedSection delay={0.2}>
+          <UseCaseCarousel useCases={useCases} />
+        </AnimatedSection>
       </div>
     </section>
   );
