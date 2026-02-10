@@ -4,7 +4,6 @@ import styles from './Footer.module.css';
 const navLinks = [
   { label: 'Sobre', href: '#about' },
   { label: 'Soluções', href: '#solutions' },
-  { label: 'Tecnologia', href: '#technology' },
   { label: 'Vantagens', href: '#advantages' },
   { label: 'Mercado', href: '#market' },
   { label: 'Contacto', href: '#contact' },
@@ -30,7 +29,7 @@ export default function Footer() {
       <div className="container">
         <div className={styles.top}>
           <div className={styles.brand}>
-            <img src="/logo.png" alt="PortEV" className={styles.logo} />
+            <img src="/logo_slogan.png" alt="PortEV" className={styles.logo} />
             <p className={styles.brandDesc}>
               Repurpose. Unlock. Earn.
               <br />

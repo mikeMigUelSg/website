@@ -38,33 +38,32 @@ const useCases = [
   {
     title: 'Blackout 28 de Abril',
     description:
-      'O apagão de 28 de abril de 2025, desencadeado por uma falha nas interligações e perda súbita de produção solar na Andaluzia, deixou a Península Ibérica isolada, provando que a segurança da rede exige descentralização real.',
+      'O apagão de 2025 expôs a vulnerabilidade das interligações ibéricas. Quando a rede central falha, a continuidade operacional exige descentralização. Os nossos sistemas garantem o funcionamento isolado, blindando a infraestrutura do cliente contra colapsos sistémicos externos.',
     icon: AlertTriangle,
     image: BlackoutImg,
   },
   {
     title: 'Tempestade Kristin',
     description:
-      'A tempestade Kristin, que levou à declaração de Estado de Calamidade em 2026, deixou meio milhão de portugueses sem luz e destruiu infraestruturas críticas, expondo a incapacidade da rede atual em resistir a eventos climáticos extremos locais.',
+      'A destruição de linhas de Alta Tensão pela tempestade Kristin demonstrou que a dependência do transporte de energia a longas distâncias representa um risco físico real. O armazenamento local elimina este ponto único de falha, assegurando estabilidade mesmo em cenários de calamidade pública.',
     icon: CloudLightning,
     image: KristinImg,
   },
   {
     title: 'Sines 4.0 & Grid Strain',
     description:
-      'Com o Start Campus em Sines a atingir 1.2 GW de capacidade (mais de 10% do pico de consumo nacional), a pressão na rede dispara. Sem armazenamento local, esta procura massiva inflaciona os preços e aumenta o risco de falhas no abastecimento.',
+      'Com o Start Campus em Sines a atingir 1.2 GW de capacidade (mais de 10% do pico de consumo nacional), a pressão na rede disparas. A solução reside na maximização do autoconsumo: armazenar energia renovável localmente permite reduzir a dependência da rede pública e anula a exposição à volatilidade de preços causada por estes hiper-consumidores.',
     icon: TrendingDown,
     image: SinesImg,
   },
   {
-    title: 'Baterias "Second Life" 2030',
+    title: 'Baterias Second Life 2030',
     description:
-      'Até 2030, a primeira geração de VEs em Portugal chega ao fim de vida. Milhares de baterias com 70-80% de capacidade estarão disponíveis, criando uma oportunidade única para armazenamento estacionário de baixo custo e apoio à rede.',
+      'A onda de veículos elétricos que atinge o fim de vida útil até 2030 cria um ativo estratégico. Com até 80% de capacidade, estas baterias permitem sistemas de armazenamento com redução de 40% no CAPEX face a equipamentos novos, viabilizando a transição energética industrial.',
     icon: Factory,
     image: CellsImg,
   },
 ];
-
 const timeline = [
   { date: 'Q3 2025', title: 'Constituição Legal', description: 'Empresa constituída legalmente em Portugal.', done: true },
   { date: 'Q4 2025', title: 'Protótipo 7 kWh', description: 'Desenvolvimento de protótipo com tensão padrão de 48V para inversores.', done: true },
