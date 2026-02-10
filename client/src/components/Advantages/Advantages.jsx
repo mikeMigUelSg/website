@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { TrendingUp, Coins, Leaf, Check } from 'lucide-react';
+import { TrendingUp, Coins, Leaf, Check, Activity} from 'lucide-react';
 import AnimatedSection from '../ui/AnimatedSection';
 import Counter from '../ui/Counter';
 import styles from './Advantages.module.css';
@@ -26,13 +26,13 @@ const advantages = [
     ],
   },
   {
-    icon: Leaf,
-    title: 'Liderança em ESG',
+    icon: Activity, // Importar de 'lucide-react'
+    title: 'Smart Care e Otimização',
     description:
-      'A PortEV é um caso de sucesso da Economia Circular, transformando um problema ambiental (resíduos de baterias) numa solução de infraestrutura essencial.',
+      'Garantimos a segurança das suas instalações com monitorização 24/7 e manutenção preditiva. Os nossos algoritmos gerem automaticamente os ciclos de carga para acelerar o retorno do investimento (ROI) e prolongar a vida útil do equipamento.',
     stats: [
-      { label: 'CO₂ Evitado', value: 70, suffix: '%' },
-      { label: 'Circularidade', value: 95, suffix: '%' },
+      { label: 'Resolução Remota', value: 90, suffix: '%' }, // Indica que a maioria dos problemas se resolve sem visita técnica
+      { label: 'Otimização ROI', value: 20, suffix: '%' }, // A gestão inteligente reduz o tempo de payback
     ],
   },
 ];
@@ -56,7 +56,7 @@ export default function Advantages() {
               O Diferencial Competitivo da <span className={styles.accent}>PortEV</span>
             </h2>
             <p className="section-subtitle">
-              A única solução que combina eficazmente a poupança de custos com inteligência técnica e sustentabilidade.
+              A única solução que combinade maneira eficaz a poupança de custos com inteligência técnica e sustentabilidade.
             </p>
           </div>
         </AnimatedSection>
