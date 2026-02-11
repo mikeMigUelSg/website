@@ -138,7 +138,7 @@ export const categories = [
           'Otimização automática baseada em previsões',
           'Poupança significativa em custos fixos de energia',
         ],
-        capacity: '50 – 300 kWh',
+        capacity: '50 – 500 kWh',
       },
       {
         id: 'autoconsumo-comercial',
@@ -152,7 +152,7 @@ export const categories = [
           'Integração com sistemas SCADA existentes',
           'Escalável conforme crescimento do negócio',
         ],
-        capacity: '30 – 500 kWh',
+        capacity: '50 – 500 kWh',
       },
       {
         id: 'deslocamento-cargas',
@@ -166,7 +166,7 @@ export const categories = [
           'Compatível com tarifas dinâmicas do mercado',
           'Gestão inteligente multi-período',
         ],
-        capacity: '50 – 250 kWh',
+        capacity: '50 – 500 kWh',
       },
       {
         id: 'continuidade-negocio',
@@ -180,21 +180,19 @@ export const categories = [
           'Integração com geradores existentes',
           'Planos de contingência automatizados',
         ],
-        capacity: '100 – 500 kWh',
+        capacity: '50 – 500 kWh',
       },
       {
         id: 'servicos-sistema',
-        name: 'Serviços de Sistema & aFRR',
+        name: 'Serviços de Sistema',
         icon: Radio,
         description:
-          'Gere receita participando em mercados ancilares da rede (aFRR em Portugal), disponibilizando capacidade de regulação de frequência e beneficiando de pagamentos regulares.',
+          'Gere receita participando em mercados ancilares da rede, disponibilizando capacidade de regulação de frequência e beneficiando de pagamentos regulares.',
         benefits: [
           'Receita adicional via mercados ancilares',
-          'Conformidade total com MPGGS',
           'Stacking de receitas com outros use cases',
-          'Monitorização e reporting em tempo real',
         ],
-        capacity: '50 – 200 kWh',
+        capacity: '50 – 500 kWh',
       },
       {
         id: 'frotas-ve',
@@ -208,7 +206,7 @@ export const categories = [
           'Integração com energia solar e tarifas dinâmicas',
           'Escalável de 2 a 50+ veículos',
         ],
-        capacity: '100 – 500 kWh',
+        capacity: '50 – 500 kWh',
       },
       {
         id: 'microrrede',
@@ -222,7 +220,7 @@ export const categories = [
           'Otimização multi-objetivo (custo, carbono, resiliência)',
           'Dashboard centralizado com analytics avançados',
         ],
-        capacity: '100 – 1000 kWh',
+        capacity: '50 – 500 kWh',
       },
     ],
   },
