@@ -37,7 +37,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          Transformamos baterias de veículos elétricos de segunda vida
+          Transformamos baterias de veículos elétricos de
           em soluções de armazenamento de energia acessíveis para
           <span className={styles.highlight}> Casas e Empresas</span>.
         </motion.p>
