@@ -60,7 +60,8 @@ export const categories = [
         benefits: [
           'Poupança imediata na fatura de eletricidade',
           'Otimização automática por horários tarifários',
-          'Compatível com tarifas bi-horárias e tri-horárias'
+          'Compatível com tarifas bi-horárias e tri-horárias',
+          'Compatível com tarifas dinâmicas do mercado'
         ],
         capacity: '5 – 30 kWh',
       },
@@ -100,7 +101,7 @@ export const categories = [
           'Autossuficiência energética',
           'Proteção contra aumentos tarifários',
           'Redução da pegada de carbono',
-          'Operação em modo off-the-grid.',
+          'Operação em modo off-the-grid',
         ],
         capacity: '20 – 45 kWh',
       },
@@ -147,22 +148,22 @@ export const categories = [
         description:
           'Maximize o retorno do investimento fotovoltaico comercial, armazenando excedentes e consumindo energia solar fora do período de produção, eliminando desperdício.',
         benefits: [
-          'Aproveitamento de até 98% da produção solar',
-          'Retorno de investimento acelerado em 2-3 anos',
-          'Integração com sistemas SCADA existentes',
+          'Aproveitamento de até 100% da produção solar*',
+          'Retorno de investimento acelerado',
           'Escalável conforme crescimento do negócio',
         ],
         capacity: '50 – 500 kWh',
       },
       {
         id: 'deslocamento-cargas',
-        name: 'Deslocamento de Cargas',
+        name: 'Arbitragem Tarifária',
         icon: CalendarClock,
         description:
           'Mova o consumo energético para horários com tarifas mais baixas, armazenando energia no vazio e utilizando-a durante períodos de ponta e cheia.',
         benefits: [
-          'Poupança até 40% nos custos variáveis de energia',
+          'Poupança nos custos variáveis de energia',
           'Automatização total do processo',
+          'Compatível com tarifas bi-horárias e tri-horárias',
           'Compatível com tarifas dinâmicas do mercado',
           'Gestão inteligente multi-período',
         ],
