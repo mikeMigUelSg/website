@@ -16,7 +16,7 @@ const problems = [
     icon: TrendingDown,
     title: 'Custo do Armazenamento',
     description:
-      'Reduzimos significativamente o CAPEX para os clientes finais em comparação com sistemas de baterias novos, tornando o armazenamento de energia acessível.',
+      'Reduzimos significativamente o CAPEX para os clientes finais em comparação com o baseline do mercado, tornando o armazenamento de energia acessível.',
     color: '#17A08A',
   },
   {
