@@ -70,7 +70,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.7 }}
         >
           <div className={styles.stat}>
-            <span className={styles.statValue}>Até 90% redução</span>
+            <span className={styles.statValue}>Até 90% de redução *</span>
             <span className={styles.statLabel}>Payback</span>
           </div>
           <div className={styles.statDivider} />
