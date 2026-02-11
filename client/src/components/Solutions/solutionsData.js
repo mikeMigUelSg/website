@@ -97,10 +97,10 @@ export const categories = [
         description:
           'Maximize a sua autonomia em relação à rede elétrica, combinando produção solar com armazenamento para alcançar níveis de autossuficiência superiores a 90%.',
         benefits: [
-          'Autossuficiência energética até 95%',
+          'Autossuficiência energética',
           'Proteção contra aumentos tarifários',
           'Redução da pegada de carbono',
-          'Operação em modo ilha quando necessário',
+          'Operação em modo off-the-grid.',
         ],
         capacity: '20 – 45 kWh',
       },
