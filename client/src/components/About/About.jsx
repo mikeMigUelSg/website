@@ -40,7 +40,7 @@ export default function About() {
             </h2>
             <p className="section-subtitle">
               A PortEV desenvolve e comercializa Sistemas Modulares de Armazenamento de Energia (BESS),
-              utilizando baterias de veículos elétricos de segunda vida com capacidade residual comprovada de 70% a 80%.
+              utilizando baterias de veículos elétricos de segunda vida com capacidade residual.
             </p>
           </div>
         </AnimatedSection>
