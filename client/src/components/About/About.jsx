@@ -40,22 +40,10 @@ export default function About() {
             </h2>
             <p className="section-subtitle">
               A PortEV desenvolve e comercializa Sistemas Modulares de Armazenamento de Energia (BESS),
-              utilizando baterias de veículos elétricos de segunda vida com capacidade residual.
+              utilizando baterias de veículos elétricos.
             </p>
           </div>
         </AnimatedSection>
-
-        <div className={styles.grid}>
-          {problems.map((item, i) => (
-            <GlowCard key={item.title} delay={i * 0.15}>
-              <div className={styles.iconWrapper}>
-                <item.icon size={28} strokeWidth={1.5} color={item.color} />
-              </div>
-              <h3 className={styles.cardTitle}>{item.title}</h3>
-              <p className={styles.cardDesc}>{item.description}</p>
-            </GlowCard>
-          ))}
-        </div>
 
         <AnimatedSection delay={0.4}>
           <div className={styles.circularEconomy}>
