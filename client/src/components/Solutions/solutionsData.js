@@ -182,19 +182,6 @@ export const categories = [
         capacity: '50 – 500 kWh',
       },
       {
-        id: 'frotas-ve',
-        name: 'Gestão de Frotas de VE',
-        icon: Truck,
-        description:
-          'Carregue a sua frota de veículos elétricos sem necessidade de reforço de rede, gerindo a carga de forma inteligente e utilizando energia armazenada nos picos.',
-        benefits: [
-          'Carregamento de frota sem reforço de rede',
-          'Gestão de prioridades e horários',
-          'Integração com energia solar e tarifas dinâmicas'
-        ],
-        capacity: '50 – 500 kWh',
-      },
-      {
         id: 'microrrede',
         name: 'Microrrede Behind-the-Meter',
         icon: Network,
