@@ -703,7 +703,7 @@ function VPPHouse({ position, index }) {
       </mesh>
 
       {/* Painel solar no telhado frontal */}
-      <group position={[0, 3.3, 0.85]} rotation={[roofAngle, 0, 0]}>
+      <group position={[0, 3.5, 0.85]} rotation={[roofAngle, 0, 0]}>
         <mesh castShadow>
           <boxGeometry args={[2.4, 0.06, 1.6]} />
           <meshPhysicalMaterial
