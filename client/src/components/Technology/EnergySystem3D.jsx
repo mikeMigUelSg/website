@@ -149,7 +149,7 @@ function SolarPanel({ onClick, isActive, energyFlow }) {
   return (
     <group ref={groupRef} position={[0, 0, 0]} onClick={onClick}>
       {/* Painel montado na face frontal do telhado */}
-      <group position={[0, 3.5, 1.5]} rotation={[roofAngle, 0, 0]}>
+      <group position={[0, 5.5, 1.5]} rotation={[roofAngle, 0, 0]}>
         {/* Painel principal */}
         <mesh castShadow receiveShadow>
           <boxGeometry args={[2.4, 0.06, 1.6]} />
