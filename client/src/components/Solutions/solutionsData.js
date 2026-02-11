@@ -170,20 +170,6 @@ export const categories = [
         capacity: '50 – 500 kWh',
       },
       {
-        id: 'continuidade-negocio',
-        name: 'Continuidade de Negócio',
-        icon: Building2,
-        description:
-          'Garanta backup industrial para processos críticos, evitando perdas de produção, sucata e custos de reinício associados a falhas de energia.',
-        benefits: [
-          'Backup instantâneo para cargas críticas',
-          'Autonomia configurável de minutos a horas',
-          'Integração com geradores existentes',
-          'Planos de contingência automatizados',
-        ],
-        capacity: '50 – 500 kWh',
-      },
-      {
         id: 'servicos-sistema',
         name: 'Serviços de Sistema',
         icon: Radio,
@@ -204,8 +190,7 @@ export const categories = [
         benefits: [
           'Carregamento de frota sem reforço de rede',
           'Gestão de prioridades e horários',
-          'Integração com energia solar e tarifas dinâmicas',
-          'Escalável de 2 a 50+ veículos',
+          'Integração com energia solar e tarifas dinâmicas'
         ],
         capacity: '50 – 500 kWh',
       },
