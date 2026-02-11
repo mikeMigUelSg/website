@@ -30,7 +30,7 @@ export default function Technology() {
           <div className="section-header">
             <span className="section-label">Tecnologia</span>
             <h2 className="section-title">
-              Como Funciona o <span className={styles.accent}>Sistema BESS</span>
+              Como Funciona o <span className={styles.accent}>Sistema Residencial</span>
             </h2>
             <p className="section-subtitle">
               Visualização interativa 3D mostrando a integração completa do sistema de armazenamento

@@ -1,3 +1,4 @@
+/* ── Section ── */
 .solutions {
   background: var(--bg-section-alt);
 }
@@ -6,175 +7,241 @@
   color: var(--color-primary);
 }
 
-.tabs {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 48px;
+/* ── Categories Grid (2 columns) ── */
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 48px;
 }
 
-.tab {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 28px;
-  border-radius: 100px;
-  font-family: var(--font-primary);
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--color-gray-700);
-  background: var(--color-white);
-  border: 2px solid var(--color-gray-300);
-  transition: all var(--transition-normal);
-}
-
-.tab:hover {
-  border-color: var(--color-primary-light);
-  color: var(--color-primary);
-}
-
-.tabActive {
-  background: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
-  box-shadow: var(--shadow-glow);
-}
-
-.tabActive:hover {
-  color: var(--color-white);
-}
-
-.tabLabel {
-  display: inline;
-}
-
-.solutionContent {
+/* ── Category Card ── */
+.categoryCard {
   background: var(--color-white);
   border-radius: var(--border-radius-xl);
   border: 1px solid rgba(29, 185, 160, 0.1);
   box-shadow: var(--shadow-md);
-  overflow: hidden;
-}
-
-.solutionMain {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 400px;
-}
-
-.solutionInfo {
-  padding: 48px;
+  padding: 36px;
   display: flex;
   flex-direction: column;
+  transition: box-shadow var(--transition-normal);
 }
 
-.solutionIcon {
-  width: 64px;
-  height: 64px;
+.categoryCard:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ── Category Header ── */
+.categoryHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.categoryIcon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
   border-radius: var(--border-radius-md);
   background: linear-gradient(135deg, var(--color-primary-lighter), var(--color-primary-light));
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-primary);
-  margin-bottom: 24px;
 }
 
-.solutionTitle {
-  font-size: 1.75rem;
-  color: var(--color-black);
-  margin-bottom: 16px;
-}
-
-.solutionDesc {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--color-gray-700);
-  margin-bottom: 24px;
-}
-
-.segment,
-.capacity {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
-.segmentLabel,
-.capacityLabel {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-gray-500);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.segmentValue,
-.capacityValue {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--color-primary);
-}
-
-.features {
-  padding: 48px;
-  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, rgba(224, 247, 241, 0.3) 100%);
-  border-left: 1px solid rgba(29, 185, 160, 0.1);
-}
-
-.featuresTitle {
-  font-size: 1.1rem;
+.categoryTitle {
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--color-black);
-  margin-bottom: 24px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  margin-bottom: 4px;
+  line-height: 1.3;
 }
 
-.featuresList {
+.categorySubtitle {
+  font-size: 0.9rem;
+  color: var(--color-gray-500);
+  line-height: 1.5;
+}
+
+/* ── Use Cases List (Vertical Accordion) ── */
+.useCasesList {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
-.featureItem {
+.useCaseItem {
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(29, 185, 160, 0.08);
+  background: var(--color-white);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.useCaseItem:hover {
+  border-color: rgba(29, 185, 160, 0.15);
+}
+
+/* ── Use Case Button ── */
+.useCaseButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.useCaseButton:hover {
+  background: rgba(29, 185, 160, 0.03);
+}
+
+.useCaseButtonActive {
+  background: rgba(29, 185, 160, 0.06);
+}
+
+.useCaseButtonLeft {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 0.95rem;
-  color: var(--color-gray-700);
-  font-weight: 500;
 }
 
-.featureIcon {
+.useCaseButtonIcon {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: var(--border-radius-sm);
+  background: var(--color-primary-lighter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-primary);
+}
+
+.useCaseButtonActive .useCaseButtonIcon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.useCaseButtonText {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-black);
+  text-align: left;
+}
+
+.useCaseChevron {
+  color: var(--color-gray-500);
   flex-shrink: 0;
 }
 
+.useCaseButtonActive .useCaseChevron {
+  color: var(--color-primary);
+}
+
+/* ── Use Case Content (Expandable) ── */
+.useCaseContent {
+  overflow: hidden;
+  border-top: 1px solid rgba(29, 185, 160, 0.08);
+}
+
+.useCaseContentInner {
+  padding: 20px 18px 20px 66px;
+  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, rgba(224, 247, 241, 0.3) 100%);
+}
+
+.useCaseCapacity {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-white);
+  padding: 6px 12px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+}
+
+.useCaseDescription {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--color-gray-700);
+  margin-bottom: 16px;
+}
+
+/* ── Use Case Benefits ── */
+.useCaseBenefits {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.useCaseBenefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-gray-700);
+  line-height: 1.4;
+}
+
+.benefitIcon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ── Responsive ── */
 @media (max-width: 900px) {
-  .tabs {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tab {
-    width: 100%;
-    max-width: 280px;
-    justify-content: center;
-  }
-
-  .solutionMain {
+  .categoriesGrid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
-  .solutionInfo,
-  .features {
-    padding: 32px 24px;
+  .categoryCard {
+    padding: 28px 20px;
   }
 
-  .features {
-    border-left: none;
-    border-top: 1px solid rgba(29, 185, 160, 0.1);
+  .categoryHeader {
+    margin-bottom: 20px;
+  }
+
+  .categoryIcon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+
+  .categoryTitle {
+    font-size: 1.25rem;
+  }
+
+  .useCaseButton {
+    padding: 12px 14px;
+  }
+
+  .useCaseButtonIcon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+
+  .useCaseButtonText {
+    font-size: 0.88rem;
+  }
+
+  .useCaseContentInner {
+    padding: 16px 14px 16px 58px;
   }
 }
