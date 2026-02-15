@@ -775,25 +775,6 @@ function Scene({ energyFlow, activeComponent, setActiveComponent }) {
         isVPP ? 80 : 40
       ]} />
 
-      <SolarPanel
-        onClick={() => setActiveComponent(activeComponent === 'solar' ? null : 'solar')}
-        isActive={activeComponent === 'solar'}
-        energyFlow={energyFlow}
-      />
-
-      <Float speed={0.8} rotationIntensity={0.3} floatIntensity={0.2}>
-        <Battery
-          onClick={() => setActiveComponent(activeComponent === 'battery' ? null : 'battery')}
-          isActive={activeComponent === 'battery'}
-          energyFlow={energyFlow}
-        />
-      </Float>
-
-      <Inverter
-        onClick={() => setActiveComponent(activeComponent === 'inverter' ? null : 'inverter')}
-        isActive={activeComponent === 'inverter'}
-      />
-
       <Float speed={1} rotationIntensity={0.1} floatIntensity={0.2}>
         <Grid
           onClick={() => setActiveComponent(activeComponent === 'grid' ? null : 'grid')}
@@ -801,62 +782,6 @@ function Scene({ energyFlow, activeComponent, setActiveComponent }) {
           energyFlow={energyFlow}
         />
       </Float>
-
-      {/* Fluxos de energia com tubos animados */}
-      {/* Inversor está em [-2, 0.5, -4] */}
-      {/* Dia: Solar -> Inversor -> Casa + Bateria */}
-      <EnergyTube
-        from={[0, 3, 0.85]}
-        to={[-2, 0.5, -4]}
-        active={energyFlow === 'day'}
-        color="#1DB9A0"
-      />
-      <EnergyTube
-        from={[-2, 0.5, -4]}
-        to={[0, 1.5, 0]}
-        active={energyFlow === 'day'}
-        color="#1DB9A0"
-      />
-      <EnergyTube
-        from={[-2, 0.5, -4]}
-        to={[-4.5, 0.8, 0]}
-        active={energyFlow === 'day'}
-        color="#1DB9A0"
-      />
-
-      {/* Noite: Bateria -> Inversor -> Casa */}
-      <EnergyTube
-        from={[-4.5, 0.8, 0]}
-        to={[-2, 0.5, -4]}
-        active={energyFlow === 'night'}
-        color="#FFD700"
-      />
-      <EnergyTube
-        from={[-2, 0.5, -4]}
-        to={[0, 1.5, 0]}
-        active={energyFlow === 'night'}
-        color="#FFD700"
-      />
-
-      {/* Export: Solar + Bateria -> Inversor -> Rede */}
-      <EnergyTube
-        from={[0, 3, 0.85]}
-        to={[-2, 0.5, -4]}
-        active={energyFlow === 'export'}
-        color="#1DB9A0"
-      />
-      <EnergyTube
-        from={[-4.5, 0.8, 0]}
-        to={[-2, 0.5, -4]}
-        active={energyFlow === 'export'}
-        color="#FFD700"
-      />
-      <EnergyTube
-        from={[-2, 0.5, -4]}
-        to={[4.5, 4, 0]}
-        active={energyFlow === 'export'}
-        color="#FF6B00"
-      />
 
       {/* VPP: 10 casas tamanho real conectadas à rede */}
       {isVPP && (
