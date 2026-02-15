@@ -1,0 +1,150 @@
+.about {
+  background: var(--color-white);
+}
+
+.accent {
+  color: var(--color-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.iconWrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--border-radius-md);
+  background: var(--color-primary-lighter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: transform var(--transition-normal), background var(--transition-normal);
+}
+
+.iconWrapper:hover {
+  transform: scale(1.1);
+  background: var(--color-primary-light);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 12px;
+}
+
+.cardDesc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-gray-700);
+}
+
+/* Circular Economy Flow */
+.circularEconomy {
+  padding: 48px;
+  background: linear-gradient(135deg, var(--color-primary-lighter), rgba(255, 255, 255, 0.8));
+  border-radius: var(--border-radius-xl);
+  border: 1px solid rgba(29, 185, 160, 0.15);
+}
+
+.economyFlow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.flowStep {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.flowCircle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-glow);
+}
+
+.flowNumber {
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.flowLabel {
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-black);
+  white-space: nowrap;
+}
+
+.flowArrow {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  margin: 0 8px;
+  position: relative;
+}
+
+.flowArrow::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -4px;
+  border: 5px solid transparent;
+  border-left: 6px solid var(--color-primary-light);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .circularEconomy {
+    padding: 32px 20px;
+  }
+
+  .economyFlow {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .flowStep {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .flowArrow {
+    width: 2px;
+    height: 24px;
+    background: linear-gradient(180deg, var(--color-primary), var(--color-primary-light));
+    margin: 0;
+  }
+
+  .flowArrow::after {
+    right: -4px;
+    top: auto;
+    bottom: 0;
+    border: 5px solid transparent;
+    border-top: 6px solid var(--color-primary-light);
+    border-left-color: transparent;
+  }
+}
