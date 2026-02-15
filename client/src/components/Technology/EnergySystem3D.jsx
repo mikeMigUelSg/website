@@ -775,12 +775,6 @@ function Scene({ energyFlow, activeComponent, setActiveComponent }) {
         isVPP ? 80 : 40
       ]} />
 
-      {/* Componentes do sistema - Casa e Painel juntos sem Float para manter alinhados */}
-      <House
-        onClick={() => setActiveComponent(activeComponent === 'house' ? null : 'house')}
-        isActive={activeComponent === 'house'}
-      />
-
       <SolarPanel
         onClick={() => setActiveComponent(activeComponent === 'solar' ? null : 'solar')}
         isActive={activeComponent === 'solar'}
@@ -979,25 +973,6 @@ export default function EnergySystem3D() {
         </Canvas>
       </div>
 
-      <div className={styles.controls}>
-        <h4 className={styles.controlsTitle}>Cenários de Operação</h4>
-        <div className={styles.flowButtons}>
-          {flowModes.map((mode) => (
-            <button
-              key={mode.id}
-              className={`${styles.flowButton} ${energyFlow === mode.id ? styles.active : ''}`}
-              onClick={() => setEnergyFlow(mode.id)}
-            >
-              <span className={styles.flowIcon}>{mode.icon}</span>
-              <span className={styles.flowLabel}>{mode.label}</span>
-              <span className={styles.flowDesc}>{mode.description}</span>
-            </button>
-          ))}
-        </div>
-        <p className={styles.hint}>
-          💡 <strong>Interaja:</strong> Clique nos componentes para informações | Arraste para rotacionar | Scroll para zoom
-        </p>
-      </div>
     </div>
   );
 }
