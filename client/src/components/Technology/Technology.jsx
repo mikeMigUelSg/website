@@ -18,7 +18,7 @@ const vppAdvantages = [
   {
     icon: Shield,
     title: 'A Bateria como Ativo',
-    description: 'A bateria de segunda vida permite exatamente isto: oferecer flexibilidade à rede, gerar receita passiva e contribuir para a estabilidade do sistema elétrico nacional.',
+    description: 'A bateria permite exatamente isto: oferecer flexibilidade à rede, gerar receita passiva e contribuir para a estabilidade do sistema elétrico nacional.',
   },
 ];
 
@@ -35,7 +35,7 @@ export default function Technology() {
             <p className="section-subtitle">
               Com a introdução do aFRR no novo MPGGs, unidades físicas agregadas podem comportar-se
               como um BSP (Balance Service Provider), disponibilizando uma banda flexível no seu programa
-              de funcionamento base — e sendo remuneradas por isso. A bateria permite exatamente isto.
+              de funcionamento base — e sendo remuneradas por isso.
             </p>
           </div>
         </AnimatedSection>
@@ -50,11 +50,8 @@ export default function Technology() {
           <div className={styles.aiSection}>
             <h3 className={styles.aiTitle}>
               <Zap size={28} />
-              Como Funciona o VPP com aFRR
+              Como Funciona um VPP 
             </h3>
-            <p className={styles.aiSubtitle}>
-              Cada bateria residencial torna-se parte de uma central virtual — agregadas, fornecem reserva de frequência à rede e geram receita para os seus proprietários.
-            </p>
             <div className={styles.aiGrid}>
               {vppAdvantages.map((item, i) => (
                 <motion.div
