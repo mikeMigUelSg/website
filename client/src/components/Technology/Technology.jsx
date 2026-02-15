@@ -33,7 +33,7 @@ export default function Technology() {
               Virtual Power Plant — <span className={styles.accent}>VPP</span>
             </h2>
             <p className="section-subtitle">
-              Com a introdução do aFRR no novo MPGGs, unidades físicas agregadas podem comportar-se
+              Com a introdução do aFRR anunciado pelo novo MPGGs, unidades físicas agregadas podem comportar-se
               como um BSP (Balance Service Provider), disponibilizando uma banda flexível no seu programa
               de funcionamento base — e sendo remuneradas por isso.
             </p>
