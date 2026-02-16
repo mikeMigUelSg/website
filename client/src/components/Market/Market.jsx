@@ -14,7 +14,8 @@ import CellsImg from '../../img/Cells.png';
 
 const marketStats = [
   {
-    value: '€'+200,
+    value: 200,
+    prefix: '€',
     suffix: 'B',
     label: 'Valor do mercado de BESS na UE até 2030',
     icon: Globe,
