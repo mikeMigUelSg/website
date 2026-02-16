@@ -64,20 +64,6 @@ export default function Advantages() {
                   <h3 className={styles.cardTitle}>{item.title}</h3>
                 </div>
                 <p className={styles.cardDesc}>{item.description}</p>
-                <div className={styles.statsRow}>
-                  {item.stats.map((stat) => (
-                    <div key={stat.label} className={styles.statItem}>
-                      <span className={styles.statValue}>
-                        <Counter
-                          end={stat.value}
-                          suffix={stat.suffix}
-                          decimals={stat.decimals || 0}
-                        />
-                      </span>
-                      <span className={styles.statLabel}>{stat.label}</span>
-                    </div>
-                  ))}
-                </div>
               </div>
             </AnimatedSection>
           ))}
