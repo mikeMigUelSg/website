@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "cd client && npm install",
     "dev": "cd client && npm run dev",
     "build": "cd client && npm run build",
     "preview": "cd client && npm run preview"
