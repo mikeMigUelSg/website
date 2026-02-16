@@ -28,6 +28,24 @@ const problems = [
   },
 ];
 
+const aiAdvantages = [
+  {
+    icon: Clock,
+    title: 'Teste Acelerado',
+    description: 'A IA reduz drasticamente o tempo de avaliação do SOH de cada módulo, eliminando dias de ciclos de carga/descarga manuais.',
+  },
+  {
+    icon: Shield,
+    title: 'Monitorização Preditiva',
+    description: 'Gestão dinâmica que assegura operação dentro dos parâmetros ideais de longevidade, maximizando a vida útil do sistema.',
+  },
+  {
+    icon: Award,
+    title: 'Garantia 8+ Anos',
+    description: 'A gestão de precisão da IA permite oferecer garantia de desempenho superior a 8 anos, desbloqueando a confiança no mercado.',
+  },
+];
+
 export default function About() {
   return (
     <section id="about" className={`section ${styles.about}`}>
@@ -65,6 +83,39 @@ export default function About() {
             </div>
           </div>
         </AnimatedSection>
+          {/* testye */}
+        <AnimatedSection delay={0.2}>
+          <div className={styles.aiSection}>
+            <h3 className={styles.aiTitle}>
+              <Brain size={28} />
+              A Vantagem da Inteligência Artificial
+            </h3>
+            <p className={styles.aiSubtitle}>
+              O cerne da nossa vantagem competitiva — permitindo gerir o risco inerente às baterias de segunda vida.
+            </p>
+            <div className={styles.aiGrid}>
+              {aiAdvantages.map((item, i) => (
+                <motion.div
+                  key={item.title}
+                  className={styles.aiCard}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 + i * 0.1 }}
+                >
+                  <div className={styles.aiCardIcon}>
+                    <item.icon size={22} strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h4 className={styles.aiCardTitle}>{item.title}</h4>
+                    <p className={styles.aiCardDesc}>{item.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </AnimatedSection>
+
       </div>
     </section>
   );
