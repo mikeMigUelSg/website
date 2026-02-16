@@ -49,6 +49,7 @@
   background: linear-gradient(135deg, var(--color-primary-lighter), rgba(255, 255, 255, 0.8));
   border-radius: var(--border-radius-xl);
   border: 1px solid rgba(29, 185, 160, 0.15);
+  margin-bottom: 64px;
 }
 
 .economyFlow {
@@ -115,17 +116,28 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .aiGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 768px) {
   .circularEconomy {
     padding: 32px 20px;
+    margin-bottom: 30px;
   }
 
   .economyFlow {
     flex-direction: column;
     gap: 16px;
   }
+  .aiSection {
+    padding: 32px 20px;
+  }
+
 
   .flowStep {
     flex-direction: column;
@@ -147,4 +159,78 @@
     border-top: 6px solid var(--color-primary-light);
     border-left-color: transparent;
   }
+}
+/* AI Section */
+.aiSection {
+  background: linear-gradient(135deg, var(--color-primary-lighter), #f0fcf9);
+  border-radius: var(--border-radius-xl);
+  padding: 48px;
+  border: 1px solid rgba(29, 185, 160, 0.15);
+}
+
+.aiTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  color: var(--color-black);
+  margin-bottom: 12px;
+}
+
+.aiTitle svg {
+  color: var(--color-primary);
+}
+
+.aiSubtitle {
+  font-size: 1rem;
+  color: var(--color-gray-700);
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.aiGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.aiCard {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(29, 185, 160, 0.1);
+  transition: all var(--transition-normal);
+}
+
+.aiCard:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.aiCardIcon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aiCardTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 6px;
+}
+
+.aiCardDesc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--color-gray-700);
 }
