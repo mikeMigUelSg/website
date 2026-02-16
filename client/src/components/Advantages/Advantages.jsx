@@ -10,30 +10,21 @@ const advantages = [
     title: 'Custos Reduzidos, Uptime Elevado',
     description:
       'Entregamos uma solução BESS com CAPEX significativamente mais baixo que o mercado, focada em proteger a continuidade operacional — onde cada hora de downtime na indústria custa milhares de euros.',
-    stats: [
-      { label: 'Redução CAPEX', value: 40, suffix: '%' },
-      { label: 'Uptime Garantido', value: 99.5, suffix: '%', decimals: 1 },
-    ],
+   
   },
   {
     icon: Coins,
     title: 'Duplo Fluxo de Receitas',
     description:
       'Além da poupança de energia, o nosso sistema está preparado para gerar receita extra ao participar nos mercados de serviços de sistema e agregação (como o aFRR em Portugal).',
-    stats: [
-      { label: 'Poupança Energia', value: 30, suffix: '%' },
-      { label: 'Receita Adicional', value: 15, suffix: '%' },
-    ],
+    
   },
   {
     icon: Activity, // Importar de 'lucide-react'
     title: 'Smart Care e Otimização',
     description:
       'Garantimos a segurança das suas instalações com monitorização 24/7 e manutenção preditiva. Os nossos algoritmos gerem automaticamente os ciclos de carga para acelerar o retorno do investimento (ROI) e prolongar a vida útil do equipamento.',
-    stats: [
-      { label: 'Resolução Remota', value: 90, suffix: '%' }, // Indica que a maioria dos problemas se resolve sem visita técnica
-      { label: 'Otimização ROI', value: 20, suffix: '%' }, // A gestão inteligente reduz o tempo de payback
-    ],
+    
   },
 ];
 
