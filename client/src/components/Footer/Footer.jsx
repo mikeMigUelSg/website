@@ -29,7 +29,7 @@ export default function Footer() {
       <div className="container">
         <div className={styles.top}>
           <div className={styles.brand}>
-            <img src="/logo_slogan.png" alt="PortEV" className={styles.logo} />
+            <H3>PortEV</H3>
             <p className={styles.brandDesc}>
               Repurpose. Unlock. Earn.
               <br />
