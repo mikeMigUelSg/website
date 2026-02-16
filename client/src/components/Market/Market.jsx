@@ -14,9 +14,9 @@ import CellsImg from '../../img/Cells.png';
 
 const marketStats = [
   {
-    value: 200,
-    suffix: ' GWh',
-    label: 'Capacidade de Armazenamento na UE até 2030',
+    value: '€'+200,
+    suffix: 'B',
+    label: 'Valor do mercado de BESS na UE até 2030',
     icon: Globe,
   },
   {
