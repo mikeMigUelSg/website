@@ -29,7 +29,7 @@ export default function Footer() {
       <div className="container">
         <div className={styles.top}>
           <div className={styles.brand}>
-            <H3>PortEV</H3>
+            <h3>PortEV</h3>
             <p className={styles.brandDesc}>
               Repurpose. Unlock. Earn.
               <br />

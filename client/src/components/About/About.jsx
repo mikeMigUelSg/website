@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Recycle, TrendingDown, ShieldCheck,Clock,Shield,Award } from 'lucide-react';
+import { Recycle, TrendingDown, ShieldCheck,Clock,Shield,Award ,Brain} from 'lucide-react';
 import AnimatedSection from '../ui/AnimatedSection';
 import GlowCard from '../ui/GlowCard';
 import styles from './About.module.css';
