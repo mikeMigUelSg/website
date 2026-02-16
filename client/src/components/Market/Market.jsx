@@ -17,7 +17,7 @@ const marketStats = [
     value: 200,
     prefix: '€',
     suffix: 'B',
-    label: 'Valor do mercado de BESS na UE até 2030',
+    label: 'Valor do mercado global de sistemas BESS até 2030',
     icon: Globe,
   },
   {
